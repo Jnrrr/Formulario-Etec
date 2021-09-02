@@ -1,0 +1,107 @@
+*{
+	margin: 0 auto;
+}
+
+body{
+	background-image: url("../img/1559447.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#logo{
+	width: 250px;
+	height: 100px;
+	border-radius: 15px 15px 0px 0px;
+	background-image: url("../img/LOGO.png");
+	background-color: transparent;
+	background-size: 240px 200px;
+	background-attachment: local;
+	background-position: 50% 40%;
+	padding-top: 10px;
+}
+
+#cadastro{
+	width: 300px;
+	height: 500px;
+	border-style: double;
+	border-color: rgb(136, 133, 133);
+	border-radius: 15px 15px 15px 15px;
+    box-shadow: 10px 10px 10px 5px black; 
+	background-image: url("../img/wallpeper1.jpg");
+	padding-top: 10px;
+}
+
+label{
+	font-family: cursive;
+	color: white;
+}
+
+label[for=cod],[for=nick],[for=tel],[for=email],[for=age],[for=senha],[for=confsenha]{
+	margin-left: 10px;
+}
+
+input{
+	margin: 5px;
+	margin-left: 10px;
+}
+input,
+label {
+	width: 250px;
+	height: 1.5rem;
+	font-size: 1rem;
+}
+
+input {
+	border: 0;
+	border-bottom: 2px solid #9e9e9e;
+	outline: none;
+	box-sizing: border-box;
+}
+
+input:focus {
+  	border-bottom: 2px solid #ff0000;  
+}
+
+#cont{
+	width: 350px;
+	height: 80px;
+	margin-top: 25px;
+	border-style: double;
+	border-color: rgb(136, 133, 133);
+	border-radius: 15px 15px 15px 15px;
+    box-shadow: 10px 10px 10px 5px black;
+	background-image: url("../img/wallpeper1.jpg");
+	padding-top: 10px;
+}
+
+#cont{
+	text-align: center;
+	font-family:'Times New Roman', Times, serif;
+	color: white;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #023373;
+	border-radius: 10px 10px 10px 10px;
+    border: 0;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    position: absolute;
+    margin-top: 25px;
+	margin-left: 150px;
+    transform: translate(-50%, -50%)
+}
+
+.botao:hover {
+    background: #0350b4;
+}
+
+.botao, select{
+    cursor: pointer;
+}
+
+
+
+
+

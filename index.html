@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+
+        <title>Ribia - Free Multiplayer online</title>
+        <link rel="icon" href="img/iconesite.jpg" sizes="16x16" type="image/jpg">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+
+    <body>
+        <div id="logo"></div>
+        
+        <div id="cadastro">
+            <form name="frmRibia">
+                <label for="cod">Dígite seu novo ID:</label><br>
+                <input type="text" name="cod" id="cod" onchange="cod.value = NaoNum(cod.value);" required>
+                <br>
+                <label for="nick">Nome:</label><br>
+                <input type="text" nome="nick" id="nick"  placeholder="Seu nick" onchange="CampoNick(nick.value);" required>
+                <br>
+                <label for="tel">Telefone:</label><br>
+                <input type="text" name="tel" id="tel" placeholder="Telefone (com DDD)" onchange="tel.value = telnumber(tel.value);" required>
+                <br>
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email" id="email" placeholder="seu@melhoremail.com.br" required>
+                <br>
+                <label for="age">Sua idade:</label><br>
+                <input type="number" name="age" id="age" placeholder="Sua idade" onchange="age.value = validarAge(age.value);" required>
+                <br>
+                <label for="senha">Senha:</label><br>
+                <input type="password" nome="senha" id=senha required>
+                <br>
+                <label for="confsenha">Confirmação de senha:</label><br>
+                <input type="password" nome="confsenha" id="confsenha" required>
+                <br>
+                <br>
+                <button class="botao" type="submit" onClick="validarSenha()" onClick="CampoNick()" onClick="NaoNum()" onClick="age()">Cadastrar-se</button>
+            </form>
+        </div>
+
+        <div id="cont">
+            <p>
+                Ao clicar em "Cadastrar-se" você confirma que <a href="#"><font color=orange>leu o Contrato de Serviço do Ribia</font></a>, 
+                <a href="#"><font color=orange>Regras do Ribia</font></a> e a <a href="#"><font color=orange>Política de Privacidade do Ribia</font></a>.
+            </p>
+        </div>
+
+        <!--Referência: https://www.tibia.com/mmorpg/free-multiplayer-online-role-playing-game.php  -->
+
+    </body>
+</html>
